@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun sendPersonDetails() {
+        /* #Sample for Parcelize */
         val intent = Intent(this, PersonDetailsActivity::class.java)
         intent.putExtra("personObject", Person(101, "Arya", "Bangalore", 24))
         startActivity(intent)
